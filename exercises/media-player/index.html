@@ -1,0 +1,120 @@
+<!-- You are given 6 files; 3 audio and 3 video.
+    Design a website using HTML only which shows these 12 files.
+    1.mp3, 2.mp3 ,3.mp3
+    1.mp4, 2.mp4 ,3.mp4 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MxPlayer-Home-Page</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>MxPlayer</h1>
+      <p>India's largest streamer</p>
+
+      <!-- can do the navigation bar horizonatly -->
+      <!-- have to remove bullets -->
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#audio">Audios</a></li>
+        <li><a href="#video"> Videos</a></li>
+      </ul>
+    </nav>
+
+    <!--  try to use footer add copy right statement-->
+    <!-- use nav tag to enable link using id -->
+    <!-- try to encorporate the maximum functionality you can ``` -->
+    <main>
+      <!-- should use article or section tag tag -->
+      <!-- should keep the h2 heading outside the section  -->
+      <h2>Audios</h2>
+
+      <section id="audio">
+        <article>
+          <h3>1.)</h3>
+          <audio controls preload="metadata">
+            <source src="1.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+        <article>
+          <h3>2.)</h3>
+          <audio controls preload="metadata">
+            <source src="2.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+        <article>
+          <h3>3.)</h3>
+          <audio controls preload="metadata">
+            <source src="3.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+      </section>
+
+      <h2>Videos</h2>
+
+      <section id="video">
+        <article>
+          <h3>1.)</h3>
+          <video
+            controls
+            poster="thumbnail1.jpg"
+            preload="metadata"
+            width="640"
+            height="360"
+          >
+            <source src="1.mp4" type="video/mp4" />
+            <source src="1.webm" type="video/webm" />
+            <source src="1.ogv" type="video/ogg" />
+
+            Your browser does not support the video tag.
+          </video>
+        </article>
+
+        <article>
+          <h3>2.)</h3>
+          <video
+            controls
+            poster="thumbnail2.jpg"
+            preload="metadata"
+            width="640"
+            height="360"
+          >
+            <source src="2.mp4" type="video/mp4" />
+            <source src="2.webm" type="video/webm" />
+            <source src="2.ogv" type="video/ogg" />
+
+            Your browser does not support the video tag.
+          </video>
+        </article>
+
+        <article>
+          <h3>3.)</h3>
+          <video
+            controls
+            poster="thumbnail2.jpg"
+            preload="metadata"
+            width="640"
+            height="360"
+          >
+            <source src="3.mp4" type="video/mp4" />
+            <source src="3.webm" type="video/webm" />
+            <source src="3.ogv" type="video/ogg" />
+
+            Your browser does not support the video tag.
+          </video>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 MxPlayer. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

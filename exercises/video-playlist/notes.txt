@@ -1,0 +1,41 @@
+
+try to make it responsive 
+when no video then  height 0  some if condition empty increase height by 18
+how to put k , M  for views may be f string 
+initially replace then append 
+
+function call how can take parameter 
+call fun throught console :make a button on clicking a function is invoked such that a card is added 
+hardcoding :what about parameters of the function 
+skip : i think no need to make the button  as how to take the input may be form or prompt
+title  channel  , views ago 
+add the time stamp how add may be  use position property 
+
+in container can use flex   , gap property can be set 
+use class card 
+
+how to put k , M  for views may be f string 
+syles to container , and card 
+
+skip for now :can add media queries for responsiveness
+
+get the input from the user throught prompt 
+how to store the time  can use time  datatype innerhtml  , template string
+
+
+
+save this template div for the future 
+
+<div class="card">
+            <div class="thumbnail">
+              <img src="thumbnail.jpg" alt="webdevelopement" />
+              <!-- put custom time -->
+              <span>12:05</span> 
+            </div>
+            <div class="description" >
+              <h2>Title</h2>
+              <span> channel</span>
+              <span>&nbsp;&bull; views</span>
+              <span>&nbsp;&bull; months ago</span>
+            </div>
+</div>

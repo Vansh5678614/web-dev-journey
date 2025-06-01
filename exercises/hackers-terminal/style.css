@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.terminal {
+  height: 33vh;
+  width: 100%;
+  border: 2px solid black;
+  background-color: rgb(119, 250, 119);
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3px;
+}
+
+.terminal > h1 {
+  text-align: center;
+  padding-top: 2px;
+  margin-top: 2px;
+  font-size: 1.5em;
+}
+
+.terminal > p {
+  text-align: center;
+}
+
+#hack-btn {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* for stoping the vibration  */
+.terminal p span {
+  display: inline-block; /* treat span like a block for sizing */
+  width: 3ch; /* space for “...” (3 characters) */
+  text-align: left; /* keep dots left-aligned inside the box */
+}

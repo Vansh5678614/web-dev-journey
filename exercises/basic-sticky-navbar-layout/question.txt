@@ -1,0 +1,11 @@
+navbar at the top
+it should be sticky 
+icon should be fixed  at lowerline 
+position property 
+how to add favicon or icon screen upto to icon  // can i add image as logo is also an image  what is the difference
+need to scroll 
+basic structure of the website 
+
+// sticky positino is not working 
+//  write optimised css code 
+// write comments 

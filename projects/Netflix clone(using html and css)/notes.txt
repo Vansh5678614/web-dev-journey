@@ -1,0 +1,26 @@
+why everything is coming in capital
+downward border is inside 
+put the drop down
+hover effect write in hindi
+see how your website looks  at different size
++ functionality
+
+
+can apply language icon try it try to create lanugage dorp down
+on click add the highliter 
+make the website responsive check for the font size 
+task make the website responsive can do with chat gpt 
+how to make this concave transition 
+i have not used used box size border box property
+is there is need 
+can add scroll functionality 0.
+
+defining the height of the section 
+some semantic and css improvement which can be done 
+adding the plus functionality 
+use css color variable 
+optimise the code
+taking reviwe is needed
+watch harry video
+setting the height 
+can use css color variable for padding margin purpose 

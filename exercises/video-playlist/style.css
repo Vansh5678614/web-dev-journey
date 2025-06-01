@@ -1,0 +1,78 @@
+/* temporary */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* styling the heading  */
+h1{
+    /* padding: 3vh 0vw 2vh 45.5vw; */
+    text-align: center;
+    padding : 2vh 0vw
+    
+}
+
+/* setting the height of the container  */
+.container{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-left: 14vw;
+    width:72vw ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh ;
+
+}
+
+.card{
+    border: 2px solid rgb(213, 213, 213) ;
+    background-color: black;
+    color:white ;
+
+    display: flex;
+    /* align-items: center; */
+    border-radius: 10px ;
+    width : 70vw ;
+    gap:2vh ;
+    
+}
+
+.thumbnail{
+    height: 16vh;
+    padding-top: 2vh;
+    padding-left: 1vw;
+    position: relative;
+}
+
+.thumbnail img{
+    height: 13vh;
+    border-radius: 6px ;
+}
+
+.thumbnail span{
+    font-size: 0.7rem;
+    color:white ;
+    background-color: black ;
+    border: 2px solid black;
+    border-radius: 4px;
+    position: absolute;
+    padding : 0px 2px ;
+    bottom: 9px;
+    right: 5px;
+}
+.description{
+    padding-top: 1.7vh;
+}
+.description h2{
+    font-size:1.2rem ;
+}
+.description span{
+    color: rgb(135, 135, 135);
+    font-size: 0.8rem;
+}
+
+

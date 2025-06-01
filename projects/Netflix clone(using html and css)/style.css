@@ -1,0 +1,354 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+}
+
+/* home-section  */
+
+.home-section{
+    background-color: #0f0f0f;
+    /* color does match due to some contrast like effect  */
+}
+/* styling the nav-bar */
+.nav-flex{
+    height: 14vh;
+    display: flex;
+    justify-content: space-around;
+    gap: 61vw;
+    /* align-content: center; */ /* not required as only single row */
+    align-items: center; 
+/*  */
+    /* background-color: green; just for testing prupose */
+}
+
+/* styling the sign-in button */
+.sign-in-button{
+    /* text-align in button is by default center  */
+    background-color: rgb(255, 255, 255); /* rgb(255, 255, 255); */
+    color: rgb(0,0,0);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    /* padding: 10px 20px; */
+    padding: 0.25rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 550;
+    min-height: 2rem;
+}
+
+
+/* styling the lang-button */
+.lang-button{
+    /* text-align in button is by default center  */
+    margin-right: 0.8vw;
+    background: transparent;
+    color: white;
+    border: 1px solid #cdc4cb;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 10px 20px;
+    padding: 0.25rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 550;
+    min-height: 2rem;
+}
+
+/* styling the login-section */
+.log-in-page{
+    /* border:2px solid black; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    width: 94vw;
+    margin:0vw 3vw;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)) ,url("assets/images/background_image.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
+    
+}
+.headline{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.log-in-page  h1 {
+    /* border: 2px solid white; */
+    width: 48vw;
+    color:white ;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.log-in-page p {
+    /* border: 2px solid white; */
+    width: 48vw;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.log-in-page h2 {
+    /* border: 2px solid white; */
+    width: 48vw;
+    text-align: center;
+}
+
+.log-in-page h2 a  , .end-login h2 a{
+    color:white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* styling the credential */
+.credential{
+    /* border:2px solid black ; */
+    width: 50vw; 
+    display: flex;
+    flex-wrap: wrap;  /* for responsiveness */
+    gap: 1vw;
+    margin-bottom: 5vh;
+
+}
+/* styling the input field */
+.credential input{
+    /* width:30vw ; */
+    /* width: 50vw; */
+    width: 29vw;
+    font-size: 1rem;
+    line-height: 1.5;
+    
+    padding: 1.5rem 1rem 0.5rem;
+    min-height: 16px;
+    min-width: 16px;
+    /* background-color:  #333; */
+    background-color:rgb(152 147 147 / 61%);
+    border-radius: 100px;
+    border: 1px solid #b3b0b0;
+}
+
+.credential input::placeholder{
+    color: #b3b0b0;
+}
+.credential button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 550;
+    min-height: 3.5rem;
+    padding: 0.75rem 2rem;
+    border-radius: 100px;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+
+/* Trending-section  */
+.trending-section{
+    /* margin-top: 5vh; */
+    background-color: #0f0f0f;
+}
+.carousel {
+    margin-top: 3vh;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vw;
+    overflow: hidden;  /* understand the importance when learn js */
+    padding: 20px 0;
+}
+
+.movie-card {
+    
+    position: relative;
+    width: 11vw;
+    height: 41vh;
+    border-radius: 15px;
+    /* overflow: hidden; */ /* no need to use */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+    
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.trending-section h2{
+    padding-top: 10vh;
+    color:  #b3b0b0;
+    font-weight:700;
+    font-size: 2rem;
+    padding-left: 8vw;
+
+}
+
+.ranking{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 650;
+    color:white;
+    right :9.5vw ;
+    
+}
+
+/* styling  more reasons to join section */
+.reasons-to-join{
+    background-color: #0f0f0f;
+    /* border: 2px solid black; */
+}
+.reasons-to-join h2{
+    /* background-color: green; */
+    color: white;
+    font-weight:700;
+    font-size: 2rem;
+    padding-left: 8vw;
+    padding-top: 9vh;
+    padding-bottom: 2vh;
+    padding-bottom: 3vh;
+    
+}
+.cards {
+    display: flex;
+    /* gap: 20px; */
+    column-gap: 2.5vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid rgb(152 147 147);
+    position: relative;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    width: 15vw;
+    height:18vh ; /* no need to set  */
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+}
+.icon {
+    position: absolute  ;
+    bottom: 2vh;
+    right: 1vw;
+    width: 42px; 
+    height: 42px;
+}
+
+/* styling frequently asked questions section */
+.frequently-asked-questions{
+    /* background-color: #0f0f0f; */
+    /* background-color: green; */
+    background-color: #0f0f0f;
+    
+}
+.frequently-asked-questions h2{
+    /* why it is appearing bigger  */
+    /* color: white; */
+    font-weight:700;
+    font-size: 2rem;
+    color: white;
+    padding-left: 8vw;
+    padding-top: 9vh;
+    padding-bottom: 2vh;
+    padding-bottom: 3vh;
+    
+}
+.questions{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 1.5vh;
+}
+.question{
+    border: 1px solid rgb(152 147 147);
+    display: flex;
+    justify-content: space-between;
+    /* gap: 51vw; */
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    /* padding: 20px; */
+    border-radius: 12px;
+    width:83vw ;
+    height: 14vh;
+}
+
+.question h3{
+    color: white;
+    margin-left: 2vw;
+   
+}
+.question img{
+    margin-right: 2vw;
+}
+
+
+/* styling the .end-login section  */
+.end-login{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+.end-login h2{
+    padding-top: 8vh;
+}
+
+/* styling the footer section */
+footer{
+    background-color: black;
+    color :#b3b0b0; 
+}
+
+.footer-call{
+    padding-top: 8vh;
+    padding-left: 8vw;
+}
+.footer-call a {
+    color: #b3b0b0;
+    /* text-decoration: none; */
+}
+
+.footer-grid {
+    padding-top: 6vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    column-gap: 6vw;
+    row-gap: 1vw;
+    max-width: 1050px;
+    margin-left:8vw;
+    text-align: left;
+}
+.footer-grid a {
+    color:#b3b0b0 ;
+    /* text-decoration: none; */
+    /* font-size: 14px; */
+}
+
+.end-lang-button{
+    margin-top: 9vh;
+    margin-left: 8vw;
+}
+
+.footer-country{
+    margin-top: 6vh;
+    margin-left: 8vw;
+}

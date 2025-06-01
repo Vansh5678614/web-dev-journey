@@ -1,0 +1,38 @@
+ <!-- Create a website which shows videos of different category and audios of different categories.
+    You can use YouTube videos in an iframe using YouTube's embedding feature -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <h1>Your Feed</h1>
+    <h2>Videos</h2>
+    <h3>Funny video</h3>
+    
+    <div>
+        <video controls preload="metadata" height="150px" >
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video.
+        </video>
+    </div>
+    <h3>Education video</h3>
+    <div>
+        <iframe height="150px" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=sgLsDSpP4mZKMcDJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <h2>Audio</h2>
+    <h3>Funny audio</h3>
+    <div>
+        <audio src="sachin.mp3" controls preload="auto">
+            Your browser does not support the audio element.
+        </audio>
+        
+    </div>
+
+    </body>
+    </html>

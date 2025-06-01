@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* sticky position is  not working for head   */
+/* styling the header part */
+header{
+    background-color: #B03052;
+    /* padding-left: 4vw; */
+    position: sticky;
+    top: 0px;
+}
+h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:white ;
+    
+}
+/* .nav-bar{
+    position: sticky;
+    top:0px ;
+} */
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 3vw ;
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+}
+
+h1 ,.nav-bar ul:first-child {
+     padding-left: 1vw; 
+}
+
+
+.nav-bar a{
+    text-decoration: none;
+    color:white;
+}
+
+
+main{
+    position:relative ;
+}
+
+/* styling the upper section  */
+.upper-section{
+    width:47vw;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding:1vh;
+    position: absolute;
+    top:2vw;
+    
+    
+}
+
+.section1{
+    left:2vw ;
+}
+.section2{
+    right:2vw ;
+}
+
+
+/* styling the article */
+.article1{
+    border: 2px solid black;
+    position:fixed;
+    width:20vw ;
+    top:65vh;
+    right:2vw;
+}
+
+figcaption {
+    font-style: italic; /* Makes it italic */
+    font-size: 0.9rem; /* Slightly smaller than normal text */
+    color: gray; /* Light color to indicate it's a caption */
+    /* text-align: center; Centers the caption */
+    margin-top: 5px; /* Adds spacing from the image */
+}
+
+/* styling the bottom section */
+.section3{
+    position:absolute ;
+    top :65vh ;
+    border: 2px solid black;
+    width: 70vw;    
+    left: 2vw;
+    border-radius: 6px;
+}
+
+/* styling the footer */
+footer{
+    border: 2px solid black;
+    position: relative;
+    left:5vw;
+    width:68vw;
+    top: 100vh;
+}
