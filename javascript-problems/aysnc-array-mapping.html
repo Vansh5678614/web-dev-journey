@@ -1,0 +1,65 @@
+<!-- //  Async Array Mapping:
+//    Write an asynchronous function that takes an array of numbers 
+// and returns a new array of Promises where each number is multiplied by 2 
+// after a delay of 500 milliseconds. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // async function solve(arr) {
+        //   const ans = [];
+        //   for (let i = 0; i < arr.length; i++) {
+        //     let promise = new Promise((resolve, reject) => {
+        //       setTimeout(() => {
+        //         arr[i] *= 2;
+        //         resolve("multiplied successfully");
+        //       }, 500);
+        //     //   resolve("multiplied successfully");
+        //     });
+        //     ans.push(promise);
+        //   }
+        //   return ans ;
+        // }
+
+        // let arr = [1, 2, 3, 4, 5, 6];
+
+        // let ans =solve(arr);
+        // console.log(ans) ;
+
+      // solve using map
+
+    //   function asyncDoubleArray(arr) {
+    //     return arr.map((num) => {
+    //       return new Promise((resolve) => {
+    //         setTimeout(() => {
+    //           resolve(num * 2);
+    //         }, 500);
+    //       });
+    //     });
+    //   }
+
+      function asyncDoubleArray(arr){
+        return arr.map(
+            (num) => {
+              return new Promise( (resolve ) => {
+                setTimeout(() => {
+                    resolve(num*2)
+                }, 500);  
+              }
+              )
+            }
+            
+        );
+      } 
+      let arr = [1, 2, 3, 4, 5, 6];
+      let ans= asyncDoubleArray(arr) ;
+    
+    </script>
+  </body>
+</html>

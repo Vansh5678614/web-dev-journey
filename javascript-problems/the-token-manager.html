@@ -1,0 +1,62 @@
+<!-- // The Token Manager: // You are developing a user authentication system, and
+you need to manage // user authentication tokens. Implement a function named
+setAuthToken that // takes an authentication token and sets it in localStorage
+with an expiration time. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function setAuthToken(token, expirationTime) {
+        let authToken = {
+          token: token,
+          expirationTime: expirationTime, // let time in second
+        };
+
+        localStorage.setItem("token", JSON.stringify(authToken));
+        setTimeout(() => {
+          localStorage.removeItem("token");
+        }, expirationTime * 1000);
+      }
+
+    //   setAuthToken("Vansh"  ,5) ;
+    </script>
+  </body>
+</html>
+
+
+<!-- a better soln  -->
+ <!-- function setAuthToken(token, expirationTimeInSeconds) {
+  const expiresAt = Date.now() + expirationTimeInSeconds * 1000;
+
+  const authToken = {
+    token: token,
+    expirationTime: expiresAt, // absolute timestamp
+  };
+
+  localStorage.setItem("token", JSON.stringify(authToken));
+
+  // Still optional, for current session auto-delete
+  setTimeout(() => {
+    localStorage.removeItem("token");
+  }, expirationTimeInSeconds * 1000);
+} -->
+
+
+<!-- function getAuthToken() {
+  const data = localStorage.getItem("token");
+  if (!data) return null;
+
+  const authToken = JSON.parse(data);
+  if (Date.now() > authToken.expirationTime) {
+    localStorage.removeItem("token");
+    return null;
+  }
+
+  return authToken.token;
+} -->

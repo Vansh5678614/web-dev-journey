@@ -1,0 +1,80 @@
+<!-- //  The Window Scroller:
+//  You are developing a single-page application with a smooth scrolling 
+// effect. Implement a function named smoothScrollToTop that smoothly
+//  scrolls the window to the top when called. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smooth Scroll to Top Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+    }
+    .content {
+      height: 2000px; /* makes the page tall so you can scroll */
+      background: linear-gradient(to bottom, #f0f8ff, #4682b4);
+      padding: 20px;
+    }
+    #backToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      padding: 12px 18px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+    #backToTopBtn:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Scroll down this page</h1>
+    <p>Keep scrolling to see the "Back to Top" button appear.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus eros vel ex fermentum, non dapibus nibh tincidunt...</p>
+    <!-- Add more text or content to fill space -->
+  </div>
+
+  <button id="backToTopBtn" onclick="smoothScrollToTop()">Back to Top</button>
+
+  <script>
+    // Function to smoothly scroll to the top
+    function smoothScrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Optional: Show/hide the button depending on scroll position
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+
+    // Initially hide the button
+    backToTopBtn.style.display = 'none';
+  </script>
+
+</body>
+</html>
