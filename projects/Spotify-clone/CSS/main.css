@@ -1,0 +1,11 @@
+body {
+  font-family: "SpotifyMixUI", sans-serif;
+  /* background-color: black; */
+}
+
+a {
+  text-decoration: none; /* removes underline */
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 700; /* Spotify-like white with 70% opacity */
+}

@@ -1,0 +1,66 @@
+/* universal selector */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* importing spotify font  */
+@font-face {
+  font-family: "SpotifyMixUI";
+  src: url("../assets/fonts/SpotifyMixUI-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SpotifyMixUI";
+  src: url("../assets/fonts/SpotifyMixUI-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SpotifyMixUITitle";
+  src: url("../assets/fonts/SpotifyMixUITitleVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.flex {
+  display: flex;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 5vh;
+  background-color: #aaa;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.nav-btn {
+  color: #aaa;
+  border: none;
+  background: none;
+  font-family: "SpotifyMixUI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+.column-gap-1vw{
+    column-gap: 1vw;
+}
+
+.column-gap-1vw{
+    column-gap: 1vw;
+}
+.column-gap-2vw{
+    column-gap: 2vw;
+}

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
 
@@ -26,7 +27,6 @@
     <link
       rel="preload"
       href="./assets/fonts/SpotifyMixUI-Regular.woff2"
-    
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -34,8 +34,6 @@
     <link
       rel="preload"
       href="./assets/fonts/SpotifyMixUI-Bold.woff2"
-      
-      
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -48,15 +46,62 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="CSS/style.css">
-
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <link rel="stylesheet" href="CSS/utility.css" />
   </head>
   <body>
-    <h1>
-        hello Lorem ipsum dolor sit amet.
-    </h1>
-    <h2> hii Lorem ipsum dolor sit.</h2>
+    <nav class="nav-bar flex item-center">
+      <div class="left-half flex item-center">
+        <a href="#">
+          <img src="./assets/svg/logo.svg" alt="Spotify logo" />
+        </a>
 
-    <p> check the fontl Lorem ipsum dolor sit amet.</p>
+        <div class="search-bar flex item-center">
+          <button class="home-btn">
+            <img
+              src="./assets/svg/home-icon.svg"
+              alt="home-icon"
+              width="24px"
+            />
+          </button>
+
+          <form action="" class="flex item-center">
+            <img
+              src="./assets/svg/search-icon.svg"
+              alt="search-icon"
+              width="24px"
+            />
+            <!-- Input -->
+            <input
+              type="search"
+              class="search-input"
+              placeholder="What do you want to play?"
+              width="28vw"
+            />
+
+            <div class="vertical-line"></div>
+            <img src="assets/svg/browse-icon.svg" alt="" width="24px" />
+          </form>
+        </div>
+      </div>
+
+      <div class="right-half flex item-center column-gap-2vw">
+        <div class="flex item-center column-gap-1vw">
+          <button class="nav-btn">Premium</button>
+          <button class="nav-btn">Support</button>
+          <button class="nav-btn">Download</button>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="log-in-section flex item-center column-gap-2vw">
+          <a href="" class="flex item-center">
+            <img src="./assets/svg/download-icon.svg" alt="" width="20px" />
+            <span>Install App</span>
+          </a>
+          <button class="nav-btn">Sign up</button>
+          <button class="login-btn">Log in</button>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
