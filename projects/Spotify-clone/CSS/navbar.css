@@ -2,7 +2,6 @@
   justify-content: space-between;
   height: 11vh;
   background-color: black;
-  border: 1px solid green; /*  remove it just for testing */
 }
 
 .left-half {
@@ -17,8 +16,8 @@
 .home-btn {
   background-color: rgb(41 40 40);
   border: none;
-  border-radius: 50%; /* Circular shape */
-  width: 8vh; /* Set width and height to make it a perfect circle */
+  border-radius: 50%;
+  width: 8vh;
   height: 8vh;
   cursor: pointer;
 }
@@ -27,12 +26,11 @@
   padding-left: 2vw;
 }
 .search-bar {
-  justify-content: flex-start; /* without is still works */
+  justify-content: flex-start;
   column-gap: 0.8vw;
 }
 
 form {
-  /* 34 */
   width: 37vw;
   height: 8vh;
   padding: 0 12px;
@@ -47,13 +45,13 @@ form {
   color: white;
   outline: none;
   font-size: 1rem;
-  font-family: "SpotifyMixUI", sans-serif; /*why need to explictly set the font */
+  font-family: "SpotifyMixUI", sans-serif;
   width: 31vw;
 }
 
 input::placeholder {
-  color: #aaa; /* Light gray or any color you want */
-  opacity: 1; /* Make sure it's fully visible */
+  color: #aaa;
+  opacity: 1;
   font-size: 1rem;
 }
 
@@ -63,11 +61,34 @@ input::placeholder {
   margin-right: 0.5vw;
 }
 
+.nav-btn {
+  color: #aaa;
+  border: none;
+  background: none;
+  font-family: "SpotifyMixUI", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.nav-btn:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
 .login-btn {
+  margin-right: 1vw;
   border-radius: 25px;
-  padding: 12px 25px;
+  padding: 10px 18px;
   font-size: 1rem;
   font-weight: 700;
   color: black;
   background-color: white;
+  outline: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+  transform: scale(1.1);
 }

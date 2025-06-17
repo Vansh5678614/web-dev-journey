@@ -1,0 +1,74 @@
+.play-bar {
+  position: absolute;
+  bottom: 0vh;
+  height: 9vh;
+  background-color: #aaa;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+}
+
+.song-info {
+  width: 40%;
+  padding-left: 1.5vw;
+}
+
+.control-btn img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.control-btn {
+  width: 100px;
+  justify-content: center;
+  column-gap: 6px;
+}
+
+.time-volume {
+  width: 32%;
+  justify-content: center;
+  column-gap: 17px;
+}
+
+.seek-bar {
+  position: absolute;
+  height: 4px;
+  width: 96%;
+  background-color: white;
+  bottom: 3px;
+  cursor: pointer;
+  margin-left: 2%;
+}
+
+.circle {
+  position: absolute;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background-color: #0075ff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.3s ease-in-out;
+}
+
+.above-bar {
+  margin-top: 2vh;
+  justify-content: space-between;
+}
+
+.volume {
+  gap: 5px;
+  align-items: center;
+}
+
+
+.volume img {
+  cursor: pointer;
+}
+
+.range input {
+  cursor: pointer;
+}

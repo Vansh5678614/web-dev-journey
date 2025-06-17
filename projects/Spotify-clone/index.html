@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
 
@@ -12,17 +11,17 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="assets/favicons/favicon-32x32.png"
     />
     <!-- 16x16 for standard tab icons -->
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/icons/favicon-16x16.png"
+      href="assets/favicons/favicon-16x16.png"
     />
     <!-- ICO fallback for legacy browser support -->
-    <link rel="icon" href="assets/icons/favicon.ico" />
+    <link rel="icon" href="assets/favicons/favicon.ico" />
 
     <link
       rel="preload"
@@ -49,8 +48,10 @@
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/navbar.css" />
     <link rel="stylesheet" href="CSS/utility.css" />
+    <link rel="stylesheet" href="CSS/playbar.css" />
   </head>
   <body>
+    <!-- building the navbar -->
     <nav class="nav-bar flex item-center">
       <div class="left-half flex item-center">
         <a href="#">
@@ -69,7 +70,7 @@
           <form action="" class="flex item-center">
             <img
               src="./assets/svg/search-icon.svg"
-              alt="search-icon"
+              alt="search icon"
               width="24px"
             />
             <!-- Input -->
@@ -81,7 +82,11 @@
             />
 
             <div class="vertical-line"></div>
-            <img src="assets/svg/browse-icon.svg" alt="" width="24px" />
+            <img
+              src="assets/svg/browse-icon.svg"
+              alt="browse icon"
+              width="24px"
+            />
           </form>
         </div>
       </div>
@@ -95,7 +100,11 @@
         <div class="vertical-line"></div>
         <div class="log-in-section flex item-center column-gap-2vw">
           <a href="" class="flex item-center">
-            <img src="./assets/svg/download-icon.svg" alt="" width="20px" />
+            <img
+              src="./assets/svg/download-icon.svg"
+              alt="download icon"
+              width="20px"
+            />
             <span>Install App</span>
           </a>
           <button class="nav-btn">Sign up</button>
@@ -103,5 +112,331 @@
         </div>
       </div>
     </nav>
+
+    <!-- now  main content -->
+    <div class="main flex">
+      <!-- library section -->
+      <div class="library ">
+        <div class="heading flex item-center">
+          <img
+            class="invert"
+            src="./assets/svg/playlist-icon.svg"
+            alt="playlist icon"
+            width="24px"
+          />
+          <h1>G.O.A.T. — Diljit Dosanjh</h1>
+        </div>
+
+        <div class="song-list">
+          <ul class="flex">
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+            <li class="flex">
+              <img
+                src="./assets/svg/music-icon.svg"
+                alt="music icon"
+                class="invert"
+              />
+              <div class="info flex">
+                <div class="title">Mortals</div>
+                <div class="artist">Harry</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer flex item-center">
+          <div>
+            <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/privacy/"
+              ><span>Privacy Center</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+              ><span>Privacy Policy</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+              ><span>Cookies</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+              ><span>About Ads</span></a
+            >
+          </div>
+          <div>
+            <a href="https://www.spotify.com/jp/accessibility/"
+              ><span>Accessibility</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- spotify playlist section  -->
+      <div class="spotify-playlist">
+        <div class="heading">
+          <h1>Albums</h1>
+        </div>
+
+        <div class="albums flex item-center">
+          <div data-folder="cs" class="album flex item-center">
+            <img src="cover.jpg" alt="" />
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+
+            <!-- <div class="play-btn">
+              <img src="./assets/svg/play-icon.svg" alt="play icon" />
+            </div> -->
+          </div>
+
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+          <div data-folder="ncs" class="album flex item-center">
+            <img src="cover.jpg" alt=""">
+            <h2>Dilijit Dosangah</h2>
+            <p>Dilijit Dosangah hits</p>
+          </div>
+        </div>
+
+        <div class="play-bar ">
+          <div class="above-bar flex">
+            <div class="song-info">Mortal</div>
+            <div class="control-btn flex item-center">
+              <img
+                id="prev"
+                src="./assets/svg/previous-icon.svg"
+                alt="previous icon"
+                class="invert"
+              />
+              <img
+                id="play"
+                src="./assets/svg/play-icon.svg"
+                alt="pause icon"
+                class="invert"
+              />
+              <img id="next" src="./assets/svg/next-icon.svg" alt="next icon" class="invert"/>
+            </div>
+            <div class="time-volume flex">
+              <div class="song-time">00:00/00:00</div>
+              <div class="volume flex">
+                <img 
+                  src="./assets/svg/volume.svg"
+                  alt="volume icon"
+                  width="20px" class="invert"
+                />
+                <div class="range flex item-center">
+                  <input type="range" name="volume" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="seek-bar">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
+
+<!-- <div class="library bg-grey rounded m-1 p-1">
+  <div class="heading">
+    <img class="invert" src="img/playlist.svg" alt="" />
+    <h2>Your Library</h2>
+  </div>
+
+  <div class="songList">
+    <ul></ul>
+  </div>
+
+  <div class="footer">
+    <div>
+      <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+    </div>
+    <div>
+      <a href="https://www.spotify.com/jp/privacy/"
+        ><span>Privacy Center</span></a
+      >
+    </div>
+    <div>
+      <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+        ><span>Privacy Policy</span></a
+      >
+    </div>
+    <div>
+      <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+        ><span>Cookies</span></a
+      >
+    </div>
+    <div>
+      <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+        ><span>About Ads</span></a
+      >
+    </div>
+    <div>
+      <a href="https://www.spotify.com/jp/accessibility/"
+        ><span>Accessibility</span></a
+      >
+    </div>
+  </div>
+</div> -->
+
+<!-- button  -->
+<!-- <button data-testid="play-button" aria-label="Play Sapphire" data-encore-id="buttonPrimary" data-is-icon-only="true" class="e-9921-button-primary e-9921-button"><span class="e-9921-baseline e-9921-overflow-wrap-anywhere e-9921-button-primary__inner encore-bright-accent-set e-9921-button-icon-only--medium"><span aria-hidden="true" class="e-9921-button__icon-wrapper"><svg data-encore-id="icon" role="img" aria-hidden="true" class="e-9921-icon e-9921-baseline" viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg></span></span></button> -->
