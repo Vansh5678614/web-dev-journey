@@ -63,7 +63,10 @@
   gap: 5px;
   align-items: center;
 }
-
+ 
+.song-time{
+  width:110px;
+}
 
 .volume img {
   cursor: pointer;
