@@ -159,7 +159,8 @@ async function initializeApp() {
 
   document.querySelectorAll(".album").forEach((element) => {
     element.addEventListener("click", async (e) => {
-      document.querySelector(".library .heading h1").innerHTML = element.querySelector("h2").textContent ; 
+      document.querySelector(".library .heading h1").innerHTML =
+        element.querySelector("h2").textContent;
 
       songUl.innerHTML = "";
       songList = await fetchSongList(`${element.dataset.folder}`);
@@ -183,7 +184,10 @@ async function initializeApp() {
       document.querySelector(".range input").value = currSong.volume * 100;
     }
   });
+
+  document.querySelector(".range input").addEventListener("input", (e) => {
+    currSong.volume = parseFloat(e.target.value) / 100;
+  });
 }
 
 initializeApp();
- 
