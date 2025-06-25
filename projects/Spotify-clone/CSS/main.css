@@ -1,6 +1,7 @@
 .main {
   justify-content: center;
   gap: 1.5vw;
+  position: relative;
 }
 
 /* styling the library section */
@@ -120,9 +121,12 @@
   font-family: "SpotifyMixUITitle", sans-serif;
   font-size: 1rem;
   color: white;
+  /* padding-top: 10px; */
+  padding-top: 1.5vh;
 }
 
 .album p {
   font-size: 0.8rem;
   color: #aaa;
 }
+

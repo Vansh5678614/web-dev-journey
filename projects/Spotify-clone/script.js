@@ -188,6 +188,14 @@ async function initializeApp() {
   document.querySelector(".range input").addEventListener("input", (e) => {
     currSong.volume = parseFloat(e.target.value) / 100;
   });
+
+  document.querySelector(".hamburger").addEventListener("click", () => {
+    if (document.querySelector(".library").style.left == "0%") {
+      document.querySelector(".library").style.left = "-100%";
+    } else {
+      document.querySelector(".library").style.left = "0%";
+    }
+  });
 }
 
 initializeApp();

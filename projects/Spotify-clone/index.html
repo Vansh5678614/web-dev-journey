@@ -49,16 +49,20 @@
     <link rel="stylesheet" href="CSS/navbar.css" />
     <link rel="stylesheet" href="CSS/utility.css" />
     <link rel="stylesheet" href="CSS/playbar.css" />
+    <link rel="stylesheet" href="CSS/responsive.css" />
   </head>
   <body>
     <!-- building the navbar -->
     <nav class="nav-bar flex item-center">
       <div class="left-half flex item-center">
-        <a href="#">
+        <div class="hamburger invert">
+          <img src="./assets/svg/hamburger.svg" alt="" />
+        </div>
+        <a href="#" class="hidden">
           <img src="./assets/svg/logo.svg" alt="Spotify logo" />
         </a>
 
-        <div class="search-bar flex item-center">
+        <div class="search-bar flex item-center hidden">
           <button class="home-btn">
             <img
               src="./assets/svg/home-icon.svg"
@@ -92,14 +96,14 @@
       </div>
 
       <div class="right-half flex item-center column-gap-2vw">
-        <div class="flex item-center column-gap-1vw">
+        <div class="flex item-center column-gap-1vw hidden">
           <button class="nav-btn">Premium</button>
           <button class="nav-btn">Support</button>
           <button class="nav-btn">Download</button>
         </div>
-        <div class="vertical-line"></div>
+        <div class="vertical-line hidden"></div>
         <div class="log-in-section flex item-center column-gap-2vw">
-          <a href="" class="flex item-center">
+          <a href="" class="flex item-center hidden">
             <img
               src="./assets/svg/download-icon.svg"
               alt="download icon"
@@ -218,5 +222,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
- 
