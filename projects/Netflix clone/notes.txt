@@ -4,7 +4,7 @@ put the drop down
 hover effect write in hindi
 see how your website looks  at different size
 + functionality
-
+can center the placeholder 
 
 can apply language icon try it try to create lanugage dorp down
 on click add the highliter 

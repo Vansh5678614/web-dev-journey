@@ -19,13 +19,4 @@ It is a beginner-friendly project to practice **web design, layout, and responsi
 - **HTML** (for structure)  
 - **CSS** (for styling)  
 
-## 📌 Future Improvements  
-- Make it **responsive** for mobile screens.  
-- Add **JavaScript** for interactive features.  
-- Improve animations and UI design.  
-- read notes.txt for  further improvement (self purpose)
----
 
-
-## self improvement that can be done 
-apply media query  to make it responsiveness

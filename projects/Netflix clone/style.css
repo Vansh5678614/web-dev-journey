@@ -127,7 +127,9 @@
     width: 29vw;
     font-size: 1rem;
     line-height: 1.5;
-    
+    /* justify-content: center;
+    align-items: center; */
+    /* display: flex; */
     padding: 1.5rem 1rem 0.5rem;
     min-height: 16px;
     min-width: 16px;
@@ -139,6 +141,8 @@
 
 .credential input::placeholder{
     color: #b3b0b0;
+    /* text-align: center; */
+    /* padding-right: 14vw; */
 }
 .credential button{
     cursor: pointer;
