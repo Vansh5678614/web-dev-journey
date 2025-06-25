@@ -1,4 +1,4 @@
-# Spotify Clone Web Player
+# 🎵 Spotify Clone Web Player
 
 A simple web-based music player inspired by Spotify, built with vanilla HTML, CSS, and JavaScript. Browse albums, play songs, control playback, and adjust volume—all within a clean, responsive interface.
 
@@ -19,23 +19,25 @@ A simple web-based music player inspired by Spotify, built with vanilla HTML, CS
 
 ## 📂 Project Structure
 
+```
 spotify-clone/
-├── assets/ # Media and font resources
-│ ├── favicons/ # Browser tab icons (favicon.ico, .png)
-│ ├── fonts/ # Spotify custom web fonts (.woff2)
-│ ├── songs/ # Music folders (each with cover.jpg, info.json, and .mp3 files)
-│ └── svg/ # All SVG icons (play, pause, next, previous, volume, etc.)
+├── assets/              # Media and font resources
+│   ├── favicons/        # Browser tab icons (favicon.ico, .png)
+│   ├── fonts/           # Spotify custom web fonts (.woff2)
+│   ├── songs/           # Music folders (each with cover.jpg, info.json, and .mp3 files)
+│   └── svg/             # All SVG icons (play, pause, next, previous, volume, etc.)
 │
-├── CSS/ # All CSS stylesheets
-│ ├── main.css # Layout styles for albums and library
-│ ├── navbar.css # Styles for the navigation bar
-│ ├── playbar.css # Styles for the music control bar at the bottom
-│ ├── utility.css # Utility classes (flex, gaps, scrollbars, spacing)
-│ └── responsive.css # Media queries for responsiveness (iPhone 12 Pro, etc.)
+├── CSS/                 # All CSS stylesheets
+│   ├── main.css         # Layout styles for albums and library
+│   ├── navbar.css       # Styles for the navigation bar
+│   ├── playbar.css      # Styles for the music control bar at the bottom
+│   ├── utility.css      # Utility classes (flex, gaps, scrollbars, spacing)
+│   └── responsive.css   # Media queries for responsiveness (iPhone 12 Pro, etc.)
 │
-├── index.html # Main HTML structure of the Spotify clone
-├── script.js # JavaScript functionality (playback, loading albums, etc.)
-└── README.md # Project overview, instructions, and setup guide
+├── index.html           # Main HTML structure of the Spotify clone
+├── script.js            # JavaScript functionality (playback, loading albums, etc.)
+└── README.md            # Project overview, instructions, and setup guide
+```
 
 ---
 
@@ -65,6 +67,7 @@ Sample `info.json` format:
   "title": "Album Title",
   "description": "Artist Name"
 }
+```
 
 ---
 
@@ -101,4 +104,3 @@ These styles are implemented via `@media` queries in the [`CSS/responsive.css`](
 - **Fetch API** for dynamic file loading
 
 ---
-```
