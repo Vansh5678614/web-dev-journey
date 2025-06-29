@@ -1,0 +1,13 @@
+{
+  "name": "clear-the-clutter",
+  "version": "1.0.0",
+  "description": "make folder of each extension \r find which extensions are present in the folder \r then make folder of each extension\r now put corresponding file in each folder",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
